@@ -1,0 +1,32 @@
+.card-form {
+    width: 50%;
+    @include mediaBetween(xs, md) {
+        width: 100%;
+    }
+}
+.login-box {
+    padding: 3rem 0;
+    height: 100vh;
+    .login-form {
+        box-shadow: rgb(0 0 0 / 10%) 0px 1px 4px, rgb(0 0 0 / 10%) 0px 2px 3px;
+    }
+}
+
+.card-title {
+    color: $c-primary;
+    font-weight: bold!important;
+    font-size: 2rem!important;
+    @include mediaBetween(xs, md) {
+        font-size: 1.5rem!important;
+    }
+}
+
+.user-action {
+    color: $c-tertiary;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    &:hover {
+        color: $c-primary;
+    }
+}

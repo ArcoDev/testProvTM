@@ -1,0 +1,7 @@
+.vscode
+node_modules
+/view/doctos/
+package.json
+package-lock.json
+Respaldo_Web
+/view/includes/modules/TMS/operaciones-clarios/inventario/

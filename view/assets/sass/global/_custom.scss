@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,300;1,600&display=swap');
+$font-monserrat: 'Montserrat',
+sans-serif;
+
+body {
+    font-family: $font-monserrat !important;
+    overflow-x: hidden !important;
+
+    legend {
+        font-size: 1.1rem !important;
+    }
+}
+
+.content,
+*, html, body {
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px!important;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #959595;
+        border-radius: 10px;
+        border: 1px solid transparent;
+    }
+}
+.content-wapper{
+    margin-left: 255px!important;
+}

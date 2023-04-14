@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,300;1,600&display=swap');
+$font-monserrat: 'Montserrat',
+sans-serif;
+
+/*Navbar*/
+.title-tm {
+    font-family: $font-monserrat;
+    font-style: italic;
+    font-weight: 600 !important;
+    color: #00aeef;
+
+    span {
+        color: #fff;
+        font-style: normal;
+    }
+}
+
+// .content-wrapper {
+//     min-height: auto!important;
+// }
+
+// Login
+.login-form {
+    background: #343A40 !important;
+    box-shadow: 0 6px 10px 0 rgb(0 0 0 / 50%), 0 6px 10px 0 rgb(0 0 0 / 19%) !important;
+
+    .card-title {
+        color: #fff;
+        // text-transform: uppercase;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 3.2rem !important;
+        font-weight: bold;
+
+        @include mediaBetween(xs, md) {
+            font-size: 2.5rem !important;
+        }
+
+        span {
+            color: #007bff;
+            font-style: italic;
+        }
+    }
+}
+
+
+.system-layout {
+    margin-top: 4rem;
+}
+
+.column-full {
+    height: auto !important;
+    background: $c-secondary;
+    border-right: 1px solid $c-gray;
+}
+
+.dev-full {
+    min-height: 100vh;
+}
+
+td.dx-datagrid-action {
+    text-align: center !important;
+}
+
+.modal-body {
+    position: relative !important;
+    overflow-x: hidden;
+}
+
+.alert-danger {
+    position: absolute !important;
+    transform: translateY(-150%);
+    top: 10px;
+    right: 15px;
+    transition: 0.3s ease-out;
+    z-index: 900 !important;
+
+    &.animaAlert {
+        transform: unset;
+    }
+}
+
+#rowID {
+    display: none;
+}
+
+.dx-selection>td {
+    background: lighten($c-primary, 20%) !important;
+    color: $c-secondary !important;
+}
+
+.data-control {
+    position: absolute;
+    top: 0px;
+    z-index: 200;
+    left: 30px;
+    background: #fff;
+}
+
+.head-title {
+    padding: 1rem 0 0 1rem;
+    font-size: 1.3rem;
+    color: $c-primary;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+
+    &.head-dark {
+        color: $c-primary;
+    }
+}
+
+.title-menu {
+    color: $c-primary;
+}
+
+.active-border {
+    border: 1px dashed #ccc;
+    padding: 0.2rem;
+}
+
+.flex-input {
+    display: flex;
+    align-items: center;
+    margin: 0.6rem 0 0.5rem 0;
+
+    p {
+        width: 30%;
+
+        @include mediaBetween(xs, md) {
+            width: 100%;
+            margin: 0.3rem 0 !important;
+        }
+    }
+
+    input {
+        width: 70%;
+
+        @include mediaBetween(xs, md) {
+            width: 100%;
+        }
+
+        &.nameCaseta {
+            width: 120%;
+        }
+
+    }
+}
+
+.fa-folder-open {
+    color: $c-primary;
+}
+
+.title-accordion {
+    color: $c-primary;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.text-menu {
+    color: lighten($c-primary, 10%);
+
+    &:hover {
+        color: $c-primary;
+    }
+}
+
+@include mediaBetween(xs, md) {
+    .flex-input {
+        flex-direction: column !important;
+        align-items: flex-start;
+    }
+}
+
+.dx-theme-ios7 .selected {
+    padding: 10px;
+}
+
+.dx-theme-ios7 img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.dx-field>.dx-lookup {
+    flex: 1;
+}
+
+.dx-searchbox .dx-searchbox .dx-texteditor-input {
+    background: red !important;
+}
+
+//Inventario 
+#add.modal.fade.show {
+    height: 100% !important;
+    padding-right: 0 !important;
+
+    @include mediaBetween(xs, md) {
+        height: 98% !important;
+    }
+}
+
+#lookUPCAT_UnidadesNegocio,
+#dateInventario {
+    width: 25% !important;
+
+    @include mediaBetween(xs, md) {
+        width: 90% !important;
+    }
+}
+
+.dx-lookup {
+    width: 20% !important;
+    margin: 0.5rem 0 1rem 1rem !important;
+
+    @include mediaBetween(xs, md) {
+        width: 90% !important;
+        margin-bottom: 3rem;
+    }
+}
+
+.dx-popover-wrapper .dx-overlay-content {
+    z-index: 9999;
+}
+
+
+.dx-field-value-static,
+.dx-field-value:not(.dx-switch):not(.dx-checkbox):not(.dx-button) {
+    width: 20% !important;
+}
+
+#textCaja {
+    display: none;
+}
+
+.sello,
+.caja {
+    outline: 1px solid #337ab7 !important;
+}
+
+
+.modal-backdrop.fade.show {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+}
+
+.user-panel,
+.info {
+    overflow: unset !important;
+}
+
+.dropdown-toggle::after {
+    // display: none!important;
+    color: #ffffffcc !important;
+}
+
+.fa-folder-open:before,
+.fa-folder:before {
+    color: #007bff !important;
+}
+
+.nav-sidebar .nav-link>.right,
+.nav-sidebar .nav-link>p>.right {
+    top: 0.9rem !important;
+}
+
+// Rutas
+.dx-field-value-static,
+.dx-field-value:not(.dx-switch):not(.dx-checkbox):not(.dx-button) {
+    width: 100% !important;
+}
+
+@include mediaBetween(xs, md) {
+    .dx-datagrid-search-panel {
+        width: 115px !important;
+    }
+
+    .dx-datagrid-header-panel .dx-toolbar-menu-container .dx-button {
+        margin: 0 !important;
+    }
+}
+
+// Files
+.photo-popup-content {
+    text-align: center;
+}
+
+.photo-popup-content .photo-popup-image {
+    height: 100%;
+    max-width: 100%;
+}
+
+// Modal
+.estatus-danger {
+    background-color: #f5c6cb !important;
+}
+
+.estatus-success {
+    background-color: #d4edda !important;
+}
+
+.estatus-warning {
+    background-color: #fff3cd !important;
+}
+
+// Flexbox y dropdown
+.flex-label {
+    flex: 0 0 8rem;
+}
+
+.flex-component {
+    flex: 1;
+}
+
+.iconExtra {
+    color: goldenrod;
+}
+
+.textExtras {
+    color: #0f4e87;
+    font-weight: bold;
+}
+
+.textExtras:hover {
+    color: #07233d;
+}
+
+@include mediaBetween(xs, md) {
+    .imgUsuarioPass {
+        margin-left: -2rem !important;
+    }
+}
+
+.dropdown-menu.show {
+    transform: translate3d(-22px, 38px, 0px) !important;
+}
+
+.dropdown-menu.dropLeft {
+    transform: translate3d(-2px, 38px, 0px) !important;
+
+    @include mediaBetween(xs, md) {
+        transform: translate3d(-8px, 38px, 0px) !important;
+
+    }
+}
+
+.table-gray {
+    background-color: #F0F0F0;
+}
+
+.table-light {
+    background-color: #FFFFFF;
+}
+
+.iconTimeline::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 4px;
+    border-radius: 0.25rem;
+    background: #343A40;
+    top: 12px;
+    right: -14px;
+    color: #2abe4f;
+}
+
+@include mediaBetween(xs, md) {
+    .head-title {
+        font-size: 0.9rem;
+    }
+}
+
+// Fascturacion TM
+.containerImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+    animation: upFade 2s ease-out infinite;
+}
+
+@keyframes upFade {
+    0% {
+        transform: unset;
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.TML-BG {
+    background-color: #ffbe00;
+}
+
+.TMS-BG {
+    background-color: #6cc2e7;
+}
+
+.TMT-BG {
+    background-color: #0d3830;
+}
+
+.TMF-BG {
+    background-color: #075873;
+}
+
+.imgEmpresa {
+    width: 35px;
+    height: 35px;
+}
+
+@include mediaBetween(xs, md) {
+    #lookupCatClienteFinal {
+        width: 100% !important;
+    }
+}
+
+// Input tipo file
+input[type="file"] {
+    font-size: 14px;
+    background: #ffffff;
+    border-radius: 9px;
+    box-shadow: 0px 1px 3px #ccc;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+}
+
+::-webkit-file-upload-button {
+    color: #ffffff;
+    background: #343A40;
+    padding: 10px;
+    border: none;
+    border-radius: 9px;
+    outline: none;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+
+    &:hover {
+        background: lighten(#343A40, 10%);
+    }
+}
+
+.modal.fade {
+    overflow-y: scroll;
+}
+
+.modal-header {
+    cursor: move;
+}
+
+//Responsive modal full screen
+.body-fullscreen {
+    overflow-y: scroll;
+
+    @include mediaFrom(xl) {
+        & {
+            height: 610px;
+        }
+    }
+
+    @include mediaFrom(hd) {
+        & {
+            height: 800px;
+        }
+    }
+}
+
+.arrowBottom.dropdown-toggle::after {
+    display: none !important;
+}
+
+//NOTIFY DEVEXPRESS
+.dx-theme-generic-typography h2 {
+    font-size: 20px!important;
+}
+.swal2-styled.swal2-confirm {
+    background-color: #1a5590!important;
+    box-shadow: none!important;
+}
+.textAgencia {
+    font-size: 8rem;
+    font-style: italic;
+    @include mediaBetween(xs, md) {
+        font-size: 2.8rem;
+    }
+    span {
+        color: #00aeef;
+    }
+}

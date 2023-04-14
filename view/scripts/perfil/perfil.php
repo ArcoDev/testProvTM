@@ -1,0 +1,1 @@
+<script src="./view/assets/js/modules/perfil/perfil.js"></script>

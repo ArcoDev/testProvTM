@@ -1,0 +1,1 @@
+<script src="./view/assets/js/file.js"></script>
